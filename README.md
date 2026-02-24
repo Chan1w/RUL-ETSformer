@@ -4,7 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)]()
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)]()
 [![IEEE TTE](https://img.shields.io/badge/Published-IEEE%20Transactions%20on%20Transportation%20Electrification-005BAC.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
 ---
@@ -81,11 +80,10 @@ The network supports:
 
 ---
 ## 💻 Environment
--Python 3.8
--PyTorch
--NumPy
--Pandas
--Scikit-learn
+- torch==2.0.0+cu118
+- numpy==1.22.4
+- pandas==1.4.2
+- matplotlib==3.6.0
 
 ```
 pip install -r requirement.txt
