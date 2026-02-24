@@ -79,3 +79,39 @@ The framework supports:
 ---
 
 ## 🏗 Model Architecture Overview
+
+---
+
+## 📊 Experimental Highlights
+
+- ✔ Superior RUL prediction accuracy  
+- ✔ Improved interpretability compared to standard Transformer  
+- ✔ Efficient long-sequence modeling  
+- ✔ Strong generalization across datasets  
+
+---
+
+## 📁 Project Structure
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Create Environment
+
+```bash
+conda create --name etsformer python=3.8
+conda activate etsformer
+
+pip install -r requirement.txt
+
+python main.py
+
+@ARTICLE{wang2025exponential,
+  author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and He, Zhiwei and Gao, Mingyu},
+  journal={IEEE Transactions on Transportation Electrification}, 
+  title={An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Battery}, 
+  year={2025},
+  pages={1-12},
+  doi={10.1109/TTE.2025.3534146}
+}
