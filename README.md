@@ -80,34 +80,28 @@ The network supports:
 - Robust generalization across aging datasets
 
 ---
+## 💻 Environment
+-Python 3.8
+-PyTorch
+-NumPy
+-Pandas
+-Scikit-learn
 
-
-## ⚙️ Installation
-
-### 1️⃣ Create Conda Environment
-
-```bash
-conda create --name etsformer python=3.8
-conda activate etsformer
-```bash
-### 2️⃣ Install Dependencies
-```bash
+```
 pip install -r requirement.txt
-```bash
+```
+
+---
 
 ## 🏃 Training & Testing
-```bash
+```
 python main.py
-```bash
-
-##💻 Environment
-Python 3.8
-PyTorch
-NumPy
-Pandas
-Scikit-learn
+```
+---
 
 ##  📌 Citation
+If you find ETSformer useful, please consider citing:
+```javascript
 @ARTICLE{wang2025exponential,
   author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and He, Zhiwei and Gao, Mingyu},
   journal={IEEE Transactions on Transportation Electrification}, 
@@ -116,3 +110,4 @@ Scikit-learn
   pages={1-12},
   doi={10.1109/TTE.2025.3534146}
 }
+```
