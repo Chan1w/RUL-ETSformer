@@ -59,8 +59,6 @@ The raw capacity sequence is decomposed into:
 
 This decomposition enables interpretable feature extraction and improves RUL learning stability.
 
----
-
 ### 2️⃣ Exponential Attention Mechanism
 
 Standard self-attention is replaced with **Exponential Attention**, which:
@@ -73,8 +71,6 @@ Standard self-attention is replaced with **Exponential Attention**, which:
 
 Mathematically, similarity weights are modulated through exponential decay based on temporal distance, allowing the model to better capture degradation continuity.
 
----
-
 ### 3️⃣ Unified Prediction Framework
 
 The network supports:
@@ -85,8 +81,6 @@ The network supports:
 
 ---
 
-
----
 
 ## ⚙️ Installation
 
