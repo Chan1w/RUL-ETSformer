@@ -89,3 +89,27 @@ The network supports:
 ```bash
 conda create --name etsformer python=3.8
 conda activate etsformer
+
+### 2️⃣ Install Dependencies
+
+pip install -r requirement.txt
+
+## 🏃 Training & Testing
+python main.py
+
+##💻 Environment
+Python 3.8
+PyTorch
+NumPy
+Pandas
+Scikit-learn
+
+##  📌 Citation
+@ARTICLE{wang2025exponential,
+  author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and He, Zhiwei and Gao, Mingyu},
+  journal={IEEE Transactions on Transportation Electrification}, 
+  title={An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Battery}, 
+  year={2025},
+  pages={1-12},
+  doi={10.1109/TTE.2025.3534146}
+}
