@@ -89,13 +89,16 @@ The network supports:
 ```bash
 conda create --name etsformer python=3.8
 conda activate etsformer
-
+```bash
 ### 2️⃣ Install Dependencies
-
+```bash
 pip install -r requirement.txt
+```bash
 
 ## 🏃 Training & Testing
+```bash
 python main.py
+```bash
 
 ##💻 Environment
 Python 3.8
