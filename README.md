@@ -2,7 +2,7 @@
 ## Exponential Transformer for Interpretable Remaining Useful Life Prediction of Lithium-Ion Batteries
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)]()
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.00+-red.svg)]()
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)]()
 [![IEEE TTE](https://img.shields.io/badge/Published-IEEE%20Transactions%20on%20Transportation%20Electrification-005BAC.svg)]()
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
