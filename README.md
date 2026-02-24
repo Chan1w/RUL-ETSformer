@@ -1,117 +1,88 @@
-# 🚀 RUL-Prediction (Exponential Transformer)
-
-## An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Batteries
+# 🚀 RUL-Prediction  
+## Exponential Transformer for Interpretable Remaining Useful Life Prediction of Lithium-Ion Batteries
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)]()
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)]()
+[![IEEE TTE](https://img.shields.io/badge/Published-IEEE%20Transactions%20on%20Transportation%20Electrification-005BAC.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-green.svg)]()
-[![IEEE TTE](https://img.shields.io/badge/Published-IEEE%20TTE-005BAC.svg)]()
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
 ---
 
-## 📖 Paper Information
+## 📖 Paper
 
-**Title:**  
-*An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Battery*
+**An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Battery**
 
-**Journal:** IEEE Transactions on Transportation Electrification  
-**Year:** 2025  
-**DOI:** 10.1109/TTE.2025.3534146  
+Chenhan Wang, Zhengyi Bao, Huipin Lin, Zhiwei He, Mingyu Gao  
 
-**Authors:**  
-Chenhan Wang, Zhengyi Bao, Huipin Lin, Zhiwei He, Mingyu Gao
+Published in **IEEE Transactions on Transportation Electrification (TTE), 2025**  
+DOI: 10.1109/TTE.2025.3534146  
 
-This repository provides the official implementation of the proposed **Exponential Transformer (ETSformer)** for battery Remaining Useful Life (RUL) prediction.
+This repository provides the official implementation of the proposed **Exponential Transformer (ETSformer)** for lithium-ion battery Remaining Useful Life (RUL) prediction.
 
 ---
 
-## 🧠 Motivation
+## 🔬 Background & Motivation
 
-Accurate RUL prediction of lithium-ion batteries is essential for:
+Accurate RUL prediction is essential for:
 
-- 🚗 Electric vehicle safety  
-- 🔋 Battery health management  
-- ⚡ Intelligent maintenance scheduling  
+- Electric vehicle safety assurance  
+- Intelligent battery health management  
+- Predictive maintenance planning  
 
-Although conventional Transformer architectures have demonstrated strong modeling capacity, they suffer from:
+Although Transformer-based architectures demonstrate strong sequence modeling capabilities, their application in battery RUL prediction faces three key challenges:
 
-- ❌ Limited interpretability of temporal decomposition  
-- ❌ Inability to explicitly model trend & fluctuation components  
-- ❌ High computational overhead in long-sequence prediction  
+1. Lack of interpretable temporal decomposition  
+2. Underutilization of degradation trend information  
+3. High computational cost in long-sequence prediction  
 
----
+Battery capacity degradation exhibits:
 
-## 🔬 Proposed Method
+- Long-term monotonic decline (trend component)
+- Short-term regeneration and fluctuation patterns
+- Strong temporal dependency structure
 
-We introduce **Exponential Transformer (ETSformer)** to address these challenges.
-
-### 🔹 1. Interpretable Time-Series Decomposition
-
-The raw battery capacity sequence is decomposed into:
-
-- **Level Component** (long-term degradation trend)
-- **Fluctuation Component** (short-term variations)
-
-This decomposition improves interpretability and enhances feature utilization.
+Conventional self-attention mechanisms fail to explicitly separate and interpret these characteristics.
 
 ---
 
-### 🔹 2. Exponential Attention Mechanism
+## 🧠 Proposed Method: Exponential Transformer (ETSformer)
 
-We replace standard self-attention with **Exponential Attention**, which:
+The proposed framework integrates interpretable decomposition with an efficient attention mechanism.
 
-- Applies exponential decay weighting
-- Emphasizes temporally similar patterns
-- Reduces irrelevant long-range interactions
-- Improves both prediction accuracy and computational efficiency
+### 1️⃣ Interpretable Temporal Decomposition
 
----
+The raw capacity sequence is decomposed into:
 
-### 🔹 3. Single-step & Multi-step Prediction Capability
+- **Level Component** – representing long-term degradation trend  
+- **Fluctuation Component** – representing short-term dynamic variations  
 
-The framework supports:
-
-- One-step ahead prediction
-- Multi-step forecasting
-- Robust performance across different aging datasets
+This decomposition enables interpretable feature extraction and improves RUL learning stability.
 
 ---
 
-## 🏗 Model Architecture Overview
+### 2️⃣ Exponential Attention Mechanism
+
+Standard self-attention is replaced with **Exponential Attention**, which:
+
+- Introduces exponential decay weighting
+- Emphasizes temporally relevant features
+- Suppresses irrelevant long-distance interactions
+- Reduces computational redundancy
+- Enhances both efficiency and prediction accuracy
+
+Mathematically, similarity weights are modulated through exponential decay based on temporal distance, allowing the model to better capture degradation continuity.
 
 ---
 
-## 📊 Experimental Highlights
+### 3️⃣ Unified Prediction Framework
 
-- ✔ Superior RUL prediction accuracy  
-- ✔ Improved interpretability compared to standard Transformer  
-- ✔ Efficient long-sequence modeling  
-- ✔ Strong generalization across datasets  
+The network supports:
 
----
-
-## 📁 Project Structure
+- Single-step RUL prediction
+- Multi-step RUL forecasting
+- Robust generalization across aging datasets
 
 ---
 
-## ⚙️ Installation
-
-### 1️⃣ Create Environment
-
-```bash
-conda create --name etsformer python=3.8
-conda activate etsformer
-
-pip install -r requirement.txt
-
-python main.py
-
-@ARTICLE{wang2025exponential,
-  author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and He, Zhiwei and Gao, Mingyu},
-  journal={IEEE Transactions on Transportation Electrification}, 
-  title={An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Battery}, 
-  year={2025},
-  pages={1-12},
-  doi={10.1109/TTE.2025.3534146}
-}
+## 🏗 Architecture Overview
