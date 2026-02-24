@@ -85,4 +85,13 @@ The network supports:
 
 ---
 
-## 🏗 Architecture Overview
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Create Conda Environment
+
+```bash
+conda create --name etsformer python=3.8
+conda activate etsformer
