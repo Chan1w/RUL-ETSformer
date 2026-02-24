@@ -99,7 +99,7 @@ python main.py
 
 ##  📌 Citation
 If you find ETSformer useful, please consider citing:
-```javascript
+```bibtex
 @ARTICLE{wang2025exponential,
   author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and He, Zhiwei and Gao, Mingyu},
   journal={IEEE Transactions on Transportation Electrification}, 
