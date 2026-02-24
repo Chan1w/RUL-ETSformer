@@ -1,34 +1,81 @@
-# RUL-Prediction
-Code release for our IEEE Transactions on Transportation Electrification paper An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of lithium-ion Battery  
+# 🚀 RUL-Prediction (Exponential Transformer)
+
+## An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Batteries
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)]()
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
+[![IEEE TTE](https://img.shields.io/badge/Published-IEEE%20TTE-005BAC.svg)]()
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
+
+---
+
+## 📖 Paper Information
+
+**Title:**  
+*An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of Lithium-Ion Battery*
+
+**Journal:** IEEE Transactions on Transportation Electrification  
+**Year:** 2025  
+**DOI:** 10.1109/TTE.2025.3534146  
+
+**Authors:**  
 Chenhan Wang, Zhengyi Bao, Huipin Lin, Zhiwei He, Mingyu Gao
-# Introduction
-Accurately predicting the remaining useful life (RUL) of lithium-ion batteries is crucial for ensuring the safety and health maintenance of electric vehicles. Although conventional Transformers have demonstrated superior performance in various scenarios, they encounter significant challenges when applied to RUL estimation. Specifically, these models often lack the ability to decompose and interpret raw temporal data effectively, leading to underutilization of critical information. Additionally, the prolonged prediction times associated with these models can increase the risks associated with safe battery operation. To address these issues while preserving the strengths of Transformer-based temporal modeling, this paper introduces a novel Exponential Transformer designed to learn interpretable temporal features. Given the declining trend in battery capacity data and the presence of fluctuating information, this paper first extracts the level component and the fluctuation component from the original data, thereby decomposing the capacity information into interpretable time-series features. Furthermore, we propose an exponential attention mechanism to replace the self-attention mechanism, which enhances RUL prediction accuracy and efficiency by focusing on similar data features through exponential decay. Extensive experiments conducted on several aging datasets demonstrate that the proposed network achieves effective results in both single-step and multi-step prediction tasks. 
-# Installation
-Create environment and activate  
-```
-conda create --name etsformer python=3.8  
-conda activate etsformer
-```
-Install requirements
-```
-pip install -r requirement.txt
-```
-# Training and Testing
-```
-python3.8 main.py
-```
-# citation
-If you find ETSformer useful, please consider citing:
-```javascript
-@ARTICLE{wang2025exponential,
-  author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and He, Zhiwei and Gao, Mingyu},
-  journal={IEEE Transactions on Transportation Electrification}, 
-  title={An Exponential Transformer for Learning Interpretable Temporal Information in Remaining Useful Life Prediction of lithium-ion Battery}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-12},
-  keywords={Batteries,Transformers,Data models,Predictive models,Market research,Degradation,Data mining,Fluctuations,Attention mechanisms,Feature extraction},
-  doi={10.1109/TTE.2025.3534146}}
-}
-```
+
+This repository provides the official implementation of the proposed **Exponential Transformer (ETSformer)** for battery Remaining Useful Life (RUL) prediction.
+
+---
+
+## 🧠 Motivation
+
+Accurate RUL prediction of lithium-ion batteries is essential for:
+
+- 🚗 Electric vehicle safety  
+- 🔋 Battery health management  
+- ⚡ Intelligent maintenance scheduling  
+
+Although conventional Transformer architectures have demonstrated strong modeling capacity, they suffer from:
+
+- ❌ Limited interpretability of temporal decomposition  
+- ❌ Inability to explicitly model trend & fluctuation components  
+- ❌ High computational overhead in long-sequence prediction  
+
+---
+
+## 🔬 Proposed Method
+
+We introduce **Exponential Transformer (ETSformer)** to address these challenges.
+
+### 🔹 1. Interpretable Time-Series Decomposition
+
+The raw battery capacity sequence is decomposed into:
+
+- **Level Component** (long-term degradation trend)
+- **Fluctuation Component** (short-term variations)
+
+This decomposition improves interpretability and enhances feature utilization.
+
+---
+
+### 🔹 2. Exponential Attention Mechanism
+
+We replace standard self-attention with **Exponential Attention**, which:
+
+- Applies exponential decay weighting
+- Emphasizes temporally similar patterns
+- Reduces irrelevant long-range interactions
+- Improves both prediction accuracy and computational efficiency
+
+---
+
+### 🔹 3. Single-step & Multi-step Prediction Capability
+
+The framework supports:
+
+- One-step ahead prediction
+- Multi-step forecasting
+- Robust performance across different aging datasets
+
+---
+
+## 🏗 Model Architecture Overview
