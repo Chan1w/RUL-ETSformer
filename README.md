@@ -17,7 +17,7 @@ Chenhan Wang, Zhengyi Bao, Huipin Lin, Zhiwei He, Mingyu Gao
 Published in **IEEE Transactions on Transportation Electrification (TTE), 2025**  
 DOI: 10.1109/TTE.2025.3534146  
 
-This repository provides the official implementation of the proposed **Exponential Transformer (ETSformer)** for lithium-ion battery Remaining Useful Life (RUL) prediction.
+This repository provides the official implementation of the proposed **Exponential Transformer (Exformer)** for lithium-ion battery Remaining Useful Life (RUL) prediction.
 
 ---
 
@@ -45,7 +45,7 @@ Conventional self-attention mechanisms fail to explicitly separate and interpret
 
 ---
 
-## 🧠 Proposed Method: Exponential Transformer (ETSformer)
+## 🧠 Proposed Method: Exponential Transformer (Exformer)
 
 The proposed framework integrates interpretable decomposition with an efficient attention mechanism.
 
@@ -98,7 +98,7 @@ python main.py
 ---
 
 ##  📌 Citation
-If you find ETSformer useful, please consider citing:
+If you find Exformer useful, please consider citing:
 ```bibtex
 @ARTICLE{wang2025exponential,
   author={Wang, Chenhan and Bao, Zhengyi and Lin, Huipin and He, Zhiwei and Gao, Mingyu},
