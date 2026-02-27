@@ -3,8 +3,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)]()
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)]()
-[![IEEE TTE](https://img.shields.io/badge/Published-IEEE%20Transactions%20on%20Transportation%20Electrification-005BAC.svg)]()
-[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
+[![IEEE TTE](https://img.shields.io/badge/Published-IEEE%20Transactions%20on%20Transportation%20Electrification-005BAC.svg)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6687316)
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)](https://ieeexplore.ieee.org/abstract/document/10852358)
 
 ---
 
